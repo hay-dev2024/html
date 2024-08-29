@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* 기본 스타일 초기화 */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 둥근모꼴;
+      line-height: 1.6;
+}
+
+/* 헤더 */
+header {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: 둥근모꼴;
+      font-size: large;
+}
+
+header img.center-image {
+      max-width: 100%;
+      height: auto;
+}
+
+/* 네비 */
+nav {
+      background-color: black;
+      color: white;
+      font-family: 둥근모꼴;
+      font-size: large;
+      padding: 10px;
+      text-align: center;
+}
+
+nav h2 {
+      margin-bottom: 10px;
+}
+
+.nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+nav .audio-player {
+      flex: none;
+      /* flex 속성을 none으로 설정하여 width 속성이 적용되도록 함 */
+      width: 300px;
+      /* 원하는 길이로 설정 */
+      margin-bottom: 10px;
+}
+
+nav .search-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+}
+
+nav .search-container input[type="text"] {
+      padding: 15px;
+      /* 패딩을 늘려서 높이를 키움 */
+      margin-right: 10px;
+      /* 마진을 늘려서 간격을 키움 */
+      border: none;
+      border-radius: 3px;
+      font-family: 둥근모꼴;
+      /* width: 200px;
+      /* 너비를 늘림 */
+      /* height: 40px;
+      /* 높이를 늘림 */
+}
+
+nav .search-container button {
+      padding: 15px 30px;
+      /* 패딩을 늘려서 크기를 키움 */
+      border: none;
+      border-radius: 3px;
+      background-color: white;
+      color: black;
+      font-family: 둥근모꼴;
+      cursor: pointer;
+      /* width: 100px; */
+      /* 너비를 늘림 */
+      /* height: 40px; */
+      /* 높이를 늘림 */
+}
+
+nav .search-container button:hover {
+      background-color: antiquewhite;
+}
+
+/* 섹션 */
+section {
+      display: flex;
+      padding: 20px;
+      font-family: 둥근모꼴;
+}
+
+section>div {
+      flex: 1;
+      padding: 10px;
+}
+
+section>div:first-child {
+      border-right: 1px solid #ddd;
+}
+
+/* footer */
+footer {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      font-family: 둥근모꼴;
+      margin-top: 20px;
+}
+
+/* 테이블 */
+table {
+      width: 80%;
+      max-width: 600px;
+      /* 최대 너비 설정 */
+      table-layout: fixed;
+      margin: auto;
+      /* Center the table */
+      font-size: large;
+}
+
+th,
+td {
+      width: 50%;
+
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px;
+}
+
+img {
+      display: block;
+      margin: 0 auto;
+}
+
+/* 테이블 셀 색 */
+.th-red {
+      background-color: #821405;
+      color: white;
+}
+
+.th-black {
+      background-color: black;
+      color: white;
+}
+
+/* h2 가운데 정렬 및 폰트 크기 조정 */
+.h2-centered-text {
+      text-align: center;
+      font-size: 2em;
+      /* 폰트 크기 조정 */
+}
+
+/* iframe-게임 플레이어 가운데 정렬 */
+.centered-iframe {
+      text-align: center;
+}
+
+.centered-iframe iframe {
+      display: block;
+      /* 블록 요소로 설정 */
+      margin: 0 auto;
+      /* 좌우 마진을 자동으로 설정하여 중앙 정렬 */
+}
